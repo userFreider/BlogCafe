@@ -1,0 +1,135 @@
+/** Google Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Krub:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500;1,600&family=PT+Sans:wght@400;700&display=swap');
+
+/** variables **/
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafo: 'Open Sans', sans-serif;
+
+    --primary-color: #c94912;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** style globales **/
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteHeading);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/** utilidades **/
+.centrar-texto{
+    text-align: center;
+}
+
+
+/** Header **/
+
+.header{
+    background-image: url(/images/bg-image.png);
+    height: 78vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center center;
+    
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--white-color);
+  
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: space-between;
+    
+}
+
+.logo{
+color: var(--primary-color);
+}
+.logo span{
+    font-weight: 700;
+    background-color: #000;
+    color: var(--white-color);
+    border-radius: 1rem;
+    padding: 5px;
+    margin: 0;
+}
+.navbar__link{
+    color: var(--white-color);
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+  
+}
+.header__texto, h2{
+    border: 1px solid white;
+}
+
+@media (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+        margin: 0;
+    }
+    .navbar__link{
+        flex-direction: column;
+    }
+
+    .header__texto h2{
+        font-size:2.9rem;
+    }
+}
