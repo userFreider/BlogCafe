@@ -84,8 +84,8 @@ ul {
 /** Header **/
 
 .header {
-    background-image:linear-gradient(to right, rgba(50, 51, 50, 0.7), rgba(28, 29, 28, 0.7)),
-     url(/images/bg-image.png);
+    background-image: linear-gradient(to right, rgba(50, 51, 50, 0.7), rgba(28, 29, 28, 0.7)),
+        url(/images/bg-image.png);
     height: 78vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,17 +98,18 @@ ul {
     color: var(--white-color);
 
 }
-.header__texto p{
-   color: #e4d7d7;
-   font-weight: bold;
-   letter-spacing: 2px;
+
+.header__texto p {
+    color: #e4d7d7;
+    font-weight: bold;
+    letter-spacing: 2px;
     font-size: 1.8rem;
 }
 
 .navbar {
     display: flex;
     align-items: center;
- 
+
     justify-content: space-between;
 
 }
@@ -127,7 +128,7 @@ ul {
 }
 
 .navbar__link {
-    color: var(--white-color); 
+    color: var(--white-color);
     display: flex;
     gap: 2rem;
     font-size: 1.8rem;
@@ -147,7 +148,7 @@ ul {
 }
 
 .entrance {
-    
+
     margin: 1px solid #ccc;
     padding-bottom: 2rem;
 }
@@ -166,8 +167,12 @@ article:last-of-type {
     font-size: 1.8rem;
     text-align: center;
     font-weight: 700;
+    border: none;
 }
 
+.button:hover{
+    cursor: pointer;
+}
 .btn-primary {
     background-color: var(--black-color);
 }
@@ -178,21 +183,21 @@ article:last-of-type {
     padding: 5px;
 }
 
-.course span{
+.course span {
     font-weight: bold;
 }
 
 .btn-secundary {
-    background-color:#520404;
+    background-color: #520404;
     font-size: 1.5rem;
 }
 
-.widget-curso p span{
+.widget-curso p span {
     font-weight: bold;
 }
 
 
-.footer{
+.footer {
     background-color: #000;
     padding: 3rem 0;
     margin-top: 4rem;
@@ -200,36 +205,40 @@ article:last-of-type {
 
 
 /** about-us **/
-.about-us{
+.about-us {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
+
 .about-us__image,
-.about-us__text{
+.about-us__text {
     flex-basis: calc(50% - 1rem);
-    
+
 }
 
 /** course **/
-.course{
+.course {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
-  
-    box-shadow: 1px 10px 15px rgba(0, 0,0 , .50);
+
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, .50);
 }
+
 .image__course {
     overflow: hidden;
     width: 100%;
     height: 100%;
     border-radius: .4rem;
 }
-.image__course img{
+
+.image__course img {
     transition: all 500ms ease;
 }
-.image__course img:hover{
+
+.image__course img:hover {
     transform: scale(1.2);
 }
 
@@ -237,8 +246,65 @@ article:last-of-type {
     border: none;
 }*/
 
-.course:last-of-type{
+.course:last-of-type {
     border: none
+}
+
+
+/**contacto **/
+.contacto-bg {
+    background-image: url(https://images.pexels.com/photos/4787610/pexels-photo-4787610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+
+.form {
+    background-color: var(--color-grey);
+    margin: -5rem auto 0 auto;
+    width: 90%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    padding-right: 2rem;
+    border: none;
+   
+   
+}
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--color-grey);
+    padding: 2px;
+    outline: none;
+}
+
+.campo__field--textarea {
+    height: 15rem;
+}
+
+
+
+/** consejo **/
+.consejo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+.consejo span{
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-grey);
 }
 
 @media (max-width:768px) {
@@ -259,21 +325,24 @@ article:last-of-type {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 4rem;
-       
+
     }
 
     .course {
         text-align: center;
-       
+
     }
 
-    .widget-curso{
+    .widget-curso {
         margin-bottom: 2rem;
     }
 
-.about-us{
-    flex-direction: column;
-   
-}
+    .about-us {
+        flex-direction: column;
 
+    }
+
+    .consejo{
+        grid-template-columns: 1fr;
+    }
 }

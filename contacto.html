@@ -39,19 +39,32 @@
     <!-- Contenido principal -->
     <main class="container">
 
-        <h3>Sobre nosotros</h3>
+        <h3>contacto</h3>
 
-        <div class="about-us">
-            <div class="about-us__image">
-                <img src="https://i.blogs.es/b92620/cafe-cafeina/1366_2000.jpg" alt="grupo de personas">
+
+        <div class="contacto-bg"></div>
+
+        <form class="form">
+            <div class="campo">
+                <label for="nombre" class="campo__label">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu nombre" id="nombre">
+
             </div>
 
-            <div class="about-us__text">
-                <p>
-                    t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing package.
-                </p>
+            <div class="campo">
+                <label for="nombre" class="campo__label">Email</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
             </div>
-        </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label ">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="button btn-primary  ">
+            </div>
+        </form>
 
     </main>
 
