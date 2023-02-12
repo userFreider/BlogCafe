@@ -330,6 +330,7 @@ article:last-of-type {
 
     .course {
         text-align: center;
+        grid-template-columns: 1fr;
 
     }
 
